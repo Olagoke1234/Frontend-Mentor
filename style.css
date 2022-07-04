@@ -12,6 +12,19 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: auto;
+}
+
+#body {
+  background-color: hsl(30, 38%, 92%);
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: auto;
 }
 
 .card-component {
@@ -51,7 +64,7 @@ body {
 }
 @media only screen and (min-width: 520px) {
   .card-component #img img {
-    height: 400px;
+    height: 450px;
     width: 250px;
     border-radius: 0;
   }
@@ -69,7 +82,7 @@ body {
 
 @media only screen and (min-width: 520px) {
   #product-description {
-    height: 320px;
+    height: 370px;
     width: 250px;
     border-radius: 0px 0px 0px 0px;
     margin-top: -5px;
