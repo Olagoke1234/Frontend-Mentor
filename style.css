@@ -35,7 +35,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 520px) and (max-width: 1440px) {
   .card-component {
     display: flex;
     flex-direction: row;
@@ -60,7 +60,7 @@ body {
   object-fit: cover;
   border-radius: 10px 10px 0px 0;
 }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 520px) and (max-width: 1440px) {
   .card-component #img img {
     height: 380px;
     width: 250px;
@@ -77,7 +77,7 @@ body {
   border-radius: 0 0 10px 10px;
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 520px) and (max-width: 1440px) {
   #product-description {
     height: 300px;
     width: 250px;
@@ -163,7 +163,7 @@ body {
   margin-top: 20px;
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 520px) and (max-width: 1440px) {
   #btn-container {
     margin-top: 60px;
   }
