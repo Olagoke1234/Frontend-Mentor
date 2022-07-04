@@ -11,38 +11,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .card-component {
-  width: 80vw;
-  height: 91vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
-  padding: 60px;
-  border-radius: 10px;
+  justify-content: center;
   margin-bottom: 20px;
+  height: 100vh;
 }
 
-@media only screen and (min-width: 400px) {
-  .card-component {
-    flex-direction: row;
-  }
-}
-
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 520px) {
   .card-component {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
-}
-
-.card-component #img {
-  width: auto;
-  height: auto;
 }
 
 .card-component #img img {
@@ -50,13 +38,11 @@ body {
   height: 290px;
   object-fit: cover;
   border-radius: 10px 10px 0px 0;
-  z-index: 5;
 }
-
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 520px) {
   .card-component #img img {
-    height: 390px;
-    width: 350px;
+    height: 400px;
+    width: 250px;
     border-radius: 0;
   }
 }
@@ -65,30 +51,18 @@ body {
   background-color: white;
   width: 350px;
   height: 310px;
-  margin-top: -10px;
+  margin-top: -57px;
   padding: 40px 10px;
   border-radius: 0 0 10px 10px;
   position: relative;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 520px) {
   #product-description {
-    height: 310px;
-    width: 330px;
-    border-radius: 0;
-    margin-top: -3px;
-    padding: 40px 10px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  #product-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-left: 20px;
+    height: 320px;
+    width: 250px;
+    border-radius: 0px 0px 0px 0px;
+    margin-top: -5px;
   }
 }
 
@@ -101,39 +75,9 @@ body {
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 400px) {
-  #product-description h1 {
-    font-size: 10px;
-    margin-top: -20px;
-    margin-bottom: 20px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  #product-description h1 {
-    font-size: 8px;
-    padding-left: 20px;
-  }
-}
-
 #product-description h2 {
   font-family: "Fraunces", serif;
   font-size: 30px;
-}
-
-@media only screen and (min-width: 400px) {
-  #product-description h2 {
-    font-size: 25px;
-    margin-top: 10px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  #product-description h2 {
-    font-size: 20px;
-    padding-left: 20px;
-    width: 250px;
-  }
 }
 
 #product-description h3 {
@@ -145,34 +89,10 @@ body {
   line-height: 1.2rem;
 }
 
-@media only screen and (min-width: 400px) {
-  #product-description h3 {
-    font-size: 12px;
-    margin-top: 15px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  #product-description h3 {
-    font-size: 10px;
-    padding-left: 20px;
-    width: 250px;
-  }
-}
-
 #price {
   display: flex;
   align-items: flex-start;
   text-align: left;
-}
-
-@media only screen and (max-width: 375px) {
-  #price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
 }
 
 #price #one {
@@ -181,27 +101,13 @@ body {
   color: hsl(158, 36%, 37%);
 }
 
-@media only screen and (max-width: 375px) {
-  #price #one {
-    text-align: right;
-  }
-}
-
 #price #two {
   margin-left: 50px;
   text-decoration-line: line-through;
   font-size: 12px;
 }
 
-@media only screen and (max-width: 375px) {
-  #price #two {
-    text-align: left;
-  }
-}
-
 button {
-  margin-top: 30px;
-  margin-left: 5px;
   padding: 15px 20px;
   text-align: center;
   width: 90%;
@@ -216,22 +122,7 @@ button {
   text-align: center;
   font-weight: 700;
   position: absolute;
-  bottom: 10px;
-}
-
-@media only screen and (max-width: 400px) {
-  button {
-    width: 90%;
-    position: absolute;
-    bottom: 10px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  button {
-    margin-left: 20px;
-    width: 60%;
-  }
+  bottom: 30px;
 }
 
 button .fa {
