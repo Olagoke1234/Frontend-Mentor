@@ -62,7 +62,7 @@ body {
 }
 @media only screen and (min-width: 520px) {
   .card-component #img img {
-    height: 450px;
+    height: 380px;
     width: 250px;
     border-radius: 0;
   }
@@ -71,16 +71,15 @@ body {
 #product-description {
   background-color: white;
   width: 350px;
-  height: 310px;
+  height: 240px;
   margin-top: -57px;
   padding: 40px 10px;
   border-radius: 0 0 10px 10px;
-  position: relative;
 }
 
 @media only screen and (min-width: 520px) {
   #product-description {
-    height: 370px;
+    height: 300px;
     width: 250px;
     border-radius: 0px 0px 0px 0px;
     margin-top: -5px;
@@ -89,7 +88,7 @@ body {
 
 @media only screen and (max-width: 359px) {
   #product-description {
-    height: 250px;
+    height: 200px;
   }
 }
 
@@ -161,11 +160,19 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 520px) {
+  #btn-container {
+    margin-top: 60px;
+  }
 }
 
 @media only screen and (max-width: 359px) {
   #btn-container {
     padding-left: 40px;
+    margin-top: 35px;
   }
 }
 
@@ -183,8 +190,6 @@ button {
   cursor: pointer;
   text-align: center;
   font-weight: 700;
-  position: absolute;
-  bottom: 10px;
 }
 
 @media only screen and (max-width: 359px) {
